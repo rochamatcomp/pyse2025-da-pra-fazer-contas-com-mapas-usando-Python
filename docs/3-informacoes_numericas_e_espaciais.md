@@ -1,0 +1,1 @@
+# Pensamento sobre o siginificado das informações numéricas e espaciais

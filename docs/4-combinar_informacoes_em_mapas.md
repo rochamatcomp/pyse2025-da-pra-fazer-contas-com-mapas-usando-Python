@@ -1,0 +1,1 @@
+# Como combinar essas informações em forma de mapas
