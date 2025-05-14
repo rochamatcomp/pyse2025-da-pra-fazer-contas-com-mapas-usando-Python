@@ -39,4 +39,4 @@ As pessoas precisam ter o python instalado no computador. Além de ter feito pel
 
 ### Áreas em que essa proposta se encaixa
 
-Computação Científica, Ciência e Análise de Dados
+Geoinformática, Matemática Computacional, Computação Científica, Ciência e Análise de Dados
