@@ -1,0 +1,28 @@
+[project]
+name = "pyse2025_da_pra_fazer_contas_com_mapas_usando_python"
+version = "0.1.0"
+description = "Uma introdução gentil aos dados espaciais com Python"
+authors = [
+    {name = "André Rocha",email = "rocha.matcomp@gmail.com"}
+]
+license = "LICENSE"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)",
+    "mkdocs-material (>=9.6.14,<10.0.0)",
+    "pymdown-extensions (>=10.15,<11.0)",
+    "mkdocs-windmill (>=1.0.5,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+pytest-clarity = "^1.0.1"
+pytest-xdist = "^3.6.1"
+pytest-cov = "^6.1.1"
+
