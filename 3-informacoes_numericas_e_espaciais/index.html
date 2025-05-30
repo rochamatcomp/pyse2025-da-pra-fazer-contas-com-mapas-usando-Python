@@ -12,8 +12,6 @@
         <link rel="prev" href="../2-fontes_de_dados/">
       
       
-        <link rel="next" href="../4-combinar_informacoes_em_mapas/">
-      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
@@ -252,6 +250,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../0-algebra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    O que é Álgebra de Mapas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../1-dados_espaciais/" class="md-nav__link">
         
   
@@ -321,116 +341,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4-combinar_informacoes_em_mapas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Como combinar essas informações em forma de mapas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../5-analise_de_dados_ludica/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Análise de dados lúdica
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6-algebra_de_mapas_com_biblioteca_padrao/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Álgebra de mapas com a biblioteca padrão do Python
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../7-algebra_de_mapas_com_bibliotecas_especializadas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Álgebra de mapas com bibliotecas especializadas em dados espaciais
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../8-visualizacao_de_dados_com_qgis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Visualização de dados espaciais com QGIS
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -466,6 +376,35 @@
 
 
 <h1 id="pensamento-sobre-o-siginificado-das-informacoes-numericas-e-espaciais">Pensamento sobre o siginificado das informações numéricas e espaciais</h1>
+<p><a href="https://epsg.io/4326">WGS84, EPSG:4326 - World Geodetic System 1984, usado no GPS</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">GEOGCRS</span><span class="k">[</span><span class="s2">&quot;WGS 84&quot;</span><span class="err">,</span>
+<span class="w">    </span><span class="n">ENSEMBLE</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 ensemble&quot;</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (Transit)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (G730)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (G873)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (G1150)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (G1674)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (G1762)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (G2139)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">MEMBER</span><span class="k">[</span><span class="s2">&quot;World Geodetic System 1984 (G2296)&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">ELLIPSOID</span><span class="k">[</span><span class="s2">&quot;WGS 84&quot;</span><span class="err">,</span><span class="k">6378137</span><span class="err">,</span><span class="k">298.257223563</span><span class="err">,</span>
+<span class="w">        </span><span class="n">LENGTHUNIT</span><span class="k">[</span><span class="s2">&quot;metre&quot;</span><span class="err">,</span><span class="k">1]]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">ENSEMBLEACCURACY</span><span class="k">[2.0]]</span><span class="err">,</span>
+<span class="n">PRIMEM</span><span class="k">[</span><span class="s2">&quot;Greenwich&quot;</span><span class="err">,</span><span class="k">0</span><span class="err">,</span>
+<span class="w">    </span><span class="n">ANGLEUNIT</span><span class="k">[</span><span class="s2">&quot;degree&quot;</span><span class="err">,</span><span class="k">0.0174532925199433]]</span><span class="err">,</span>
+<span class="n">CS</span><span class="k">[ellipsoidal</span><span class="err">,</span><span class="k">2]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">AXIS</span><span class="k">[</span><span class="s2">&quot;geodetic latitude (Lat)&quot;</span><span class="err">,</span><span class="k">north</span><span class="err">,</span>
+<span class="w">        </span><span class="n">ORDER</span><span class="k">[1]</span><span class="err">,</span>
+<span class="w">        </span><span class="n">ANGLEUNIT</span><span class="k">[</span><span class="s2">&quot;degree&quot;</span><span class="err">,</span><span class="k">0.0174532925199433]]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">AXIS</span><span class="k">[</span><span class="s2">&quot;geodetic longitude(Lon)&quot;</span><span class="err">,</span><span class="k">east</span><span class="err">,</span>
+<span class="w">        </span><span class="n">ORDER</span><span class="k">[2]</span><span class="err">,</span>
+<span class="w">        </span><span class="n">ANGLEUNIT</span><span class="k">[</span><span class="s2">&quot;degree&quot;</span><span class="err">,</span><span class="k">0.0174532925199433]]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">USAGE</span><span class="k">[</span>
+<span class="w">        </span><span class="n">SCOPE</span><span class="k">[</span><span class="s2">&quot;Horizontal component of 3D system.&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">        </span><span class="n">AREA</span><span class="k">[</span><span class="s2">&quot;World.&quot;</span><span class="k">]</span><span class="err">,</span>
+<span class="w">        </span><span class="n">BBOX</span><span class="k">[-90</span><span class="err">,</span><span class="k">-180</span><span class="err">,</span><span class="k">90</span><span class="err">,</span><span class="k">180]]</span><span class="err">,</span>
+<span class="w">    </span><span class="n">ID</span><span class="k">[</span><span class="s2">&quot;EPSG&quot;</span><span class="err">,</span><span class="k">4326]]</span>
+</code></pre></div>
 
 
 
