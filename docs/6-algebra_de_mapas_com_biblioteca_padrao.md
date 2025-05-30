@@ -1,1 +1,0 @@
-# Álgebra de mapas com a biblioteca padrão do Python

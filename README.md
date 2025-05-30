@@ -28,6 +28,7 @@ As pessoas precisam ter o python instalado no computador. Além de ter feito pel
 
 ### Tabela de conteúdo
 
+- O que é álgebra de mapas
 - O que são dados espaciais
 - Fontes de dados espaciais públicos
 - Pensamento sobre o siginificado das informações numéricas e espaciais

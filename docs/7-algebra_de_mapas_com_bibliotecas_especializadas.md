@@ -1,1 +1,0 @@
-# Álgebra de mapas com bibliotecas especializadas em dados espaciais

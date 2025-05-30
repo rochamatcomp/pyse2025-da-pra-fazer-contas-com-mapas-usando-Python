@@ -12,7 +12,10 @@ dependencies = [
     "mkdocs (>=1.6.1,<2.0.0)",
     "mkdocs-material (>=9.6.14,<10.0.0)",
     "pymdown-extensions (>=10.15,<11.0)",
-    "mkdocs-windmill (>=1.0.5,<2.0.0)"
+    "mkdocs-windmill (>=1.0.5,<2.0.0)",
+    "numpy (>=2.2.6,<3.0.0)",
+    "numexpr (>=2.10.2,<3.0.0)",
+    "rasterio (>=1.4.3,<2.0.0)"
 ]
 
 
@@ -25,4 +28,10 @@ pytest = "^8.3.5"
 pytest-clarity = "^1.0.1"
 pytest-xdist = "^3.6.1"
 pytest-cov = "^6.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^9.2.0"
+ipdb = "^0.13.13"
+rich = "^14.0.0"
 
